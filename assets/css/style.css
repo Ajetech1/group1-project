@@ -22,9 +22,48 @@ nav a.active {
   padding: 10px;
   border-radius: 20px;
   color: white;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
+
+/* Responsive */
+nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav a:not(:first-child) {
+    display: none;
+  }
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  nav.responsive {
+    position: relative;
+  }
+  nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 7px;
+    border-bottom: 1px solid #eb662b;
+  }
+  nav.responsive a.active {
+    margin: 30px;
+    border-bottom: none;
+  }
+}
+/* Responsive ends here */
 form {
   display: inline-block;
   margin-left: 70px;
