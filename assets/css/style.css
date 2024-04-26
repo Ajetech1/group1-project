@@ -47,8 +47,8 @@ form input {
   justify-content: center;
   align-items: center;
   color: black;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .centered-text {
@@ -65,7 +65,7 @@ p {
 .section-container {
   background-color: #ffffff; /* White background */
   height: 70px; /* Add some padding to the container */
-  width: 760px; /* Set the width of the container */
+  width: 900px; /* Set the width of the container */
   margin: 40px auto; /* Add some margin and center the container */
   border: 1px solid #dddddd; /* Add a border to the container */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow to the container */
@@ -134,7 +134,7 @@ p {
   position: absolute;
   background-color: #eb662b;
   top: 440px;
-  left: 925px;
+  left: 1070px;
   width: 90px;
   padding: 20px;
   border-radius: 12px;
@@ -143,9 +143,6 @@ p {
   border: 3px;
 }
 
-h3 {
-  margin: 50px;
-}
 .container {
   display: flex;
   justify-content: space-around;
@@ -185,8 +182,24 @@ h3 {
 }
 
 .image-container img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   margin-bottom: 10px;
+}
+
+.image-container p {
+  font-weight: bold;
+}
+
+.trending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 230px;
+  margin-right: 50px;
+}
+
+h3 {
+  margin: 50px;
 }
